@@ -1,0 +1,231 @@
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+<head>
+{% include _head.html %}
+</head>
+
+<body class="page">
+<style>
+    /*********************************
+     The list of publication items
+     *********************************/
+/* The list of items */
+.biblist { }
+
+/* The item */
+.biblist li { }
+
+/* You can define custom styles for plstyle field here. */
+
+
+/*************************************
+ The box that contain BibTeX code
+ *************************************/
+div.noshow { display: none; }
+div.bibtex {
+	margin-right: 0%;
+	margin-top: 1.2em;
+	margin-bottom: 1em;
+	border: 1px solid silver;
+	padding: 0em 1em;
+	background: #ffffee;
+}
+div.bibtex pre { font-size: 75%; overflow: auto;  width: 100%; padding: 0em 0em;}</style>
+<script type="text/javascript">
+    <!--
+    // Toggle Display of BibTeX
+    function toggleBibtex(articleid) {
+        var bib = document.getElementById('bib_'+articleid);
+        if (bib) {
+            if(bib.className.indexOf('bibtex') != -1) {
+                bib.className.indexOf('noshow') == -1?bib.className = 'bibtex noshow':bib.className = 'bibtex';
+            }
+        } else {
+            return;
+        }
+    }
+-->
+    </script>
+
+{% include _browser-upgrade.html %}
+
+{% include _navigation.html %}
+
+{% if page.image.feature %}
+  <div class="image-wrap">
+  <img src=
+    {% if page.image.feature contains 'http://' %}
+      "{{ page.image.feature }}"
+    {% elsif page.image.feature contains 'https://' %}
+      "{{ page.image.feature }}"
+    {% else %}
+      "{{ site.url }}/images/{{ page.image.feature }}"
+    {% endif %}
+  alt="{{ page.title }} feature image">
+  {% if page.image.credit %}
+    <span class="image-credit">Photo Credit: <a href="{{ page.image.creditlink }}">{{ page.image.credit }}</a></span>
+  {% endif %}
+  </div><!-- /.image-wrap -->
+{% endif %}
+
+<div id="main" role="main">
+  <div class="article-author-side">
+    {% include _author-bio.html %}
+  </div>
+  <article>
+    <h1>{{ page.title }}</h1>
+    <div class="article-wrap">
+      {{ content }}
+
+<h4 style="margin-bottom:0px;padding-top:20px;">Conference Publications</h4>
+<ul class="biblist">
+
+    <li ><p>
+      <b>P. Abolghasemi</b>, 
+      <a href="https://amirmazaheri1990.github.io/" target="_blank">A. Mazaheri</a>,  
+        M. Shah and
+        <a href="http://www.cs.ucf.edu/~lboloni/" target="_blank">L. Bölöni</a>
+        <br><b>Pay attention!-Robustifying a Deep Visuomotor Policy through Task-Focused Attention</b><br>
+        <i>Computer Vision and Pattern Recognition (CVPR)</i>,
+        2019.
+        <br />
+        <a href="javascript:toggleBibtex('pooya_cvpr')">[BibTeX]</a>
+        <a href="https://arxiv.org/pdf/1809.10093.pdf" target="_blank">[PDF]</a> <a href="../pay-attention/">
+        [Page]</a> 
+        </p>
+        <div id="bib_pooya_cvpr" class="bibtex noshow">
+        <pre>
+          @inproceedings{rahmatizadeh2018vision,
+            title={Pay attention!-Robustifying a Deep Visuomotor Policy through Task-Focused Attention},
+            author={Abolghasemi, Pooya and Mazaheri, Amir and Shah, Mubarak and B{\"o}l{\"o}ni, Ladislau},
+            booktitle={Computer Vision and Pattern Recognition (CVPR)},
+            year={2019},
+          }
+        </pre>
+        </div>
+        </li>
+
+
+        <li ><p>
+            <a href="http://www.cs.ucf.edu/~rrahmati/" target="_blank">R. Rahmatizadeh</a>, 
+            <b>P. Abolghasemi</b>, 
+            <a href="http://www.cs.ucf.edu/~lboloni/" target="_blank">L. Bölöni</a>, and 
+            <a href="https://people.eecs.berkeley.edu/~svlevine/" target="_blank">S. Levine</a>
+            <br><b>Vision-based multi-task manipulation for inexpensive robots using end-to-end learning from demonstration</b><br>
+            <i>International Conference on Robotics and Automation (ICRA)</i>,
+            2018.
+            <br />
+            <a href="javascript:toggleBibtex('roohi_icra')">[BibTeX]</a>
+            <a href="https://arxiv.org/abs/1707.02920" target="_blank">[PDF]</a> <a href="https://www.youtube.com/watch?v=AqQFzoVsJfA&list=PL5i33tEH-MHfrXjj_Nekl0jyqgdJomg_a"  target="_blank">
+            [Video]</a> 
+            </p>
+            <div id="bib_roohi_icra" class="bibtex noshow">
+            <pre>
+              @inproceedings{rahmatizadeh2018vision,
+                title={Vision-based multi-task manipulation for inexpensive robots using end-to-end learning from demonstration},
+                author={Rahmatizadeh, Rouhollah and Abolghasemi, Pooya and B{\"o}l{\"o}ni, Ladislau and Levine, Sergey},
+                booktitle={2018 IEEE International Conference on Robotics and Automation (ICRA)},
+                pages={3758--3765},
+                year={2018},
+                organization={IEEE}
+              }
+            </pre>
+            </div>
+            </li>
+
+            <li ><p>
+                <a href="http://www.cs.ucf.edu/~rrahmati/" target="_blank">R. Rahmatizadeh</a>, 
+                <b>P. Abolghasemi</b>, 
+                A. Behal and
+                <a href="http://www.cs.ucf.edu/~lboloni/" target="_blank">L. Bölöni</a>
+                <br><b>From virtual demonstration to real-world manipulation using LSTM and MDN</b><br>
+                <i>Association for the Advancement of Artificial Intelligence (AAAI)</i>,
+                2018.
+                <br />
+                <a href="javascript:toggleBibtex('roohi_aaai')">[BibTeX]</a>
+                <a href="https://arxiv.org/abs/1603.03833" target="_blank">[PDF]</a> <a href="https://www.youtube.com/watch?v=9vYlIG2ozaM"  target="_blank">
+                [Video]</a> 
+                </p>
+                <div id="bib_roohi_aaai" class="bibtex noshow">
+                <pre>
+                    @inproceedings{rahmatizadeh2018virtual,
+                      title={From virtual demonstration to real-world manipulation using LSTM and MDN},
+                      author={Rahmatizadeh, Rouhollah and Abolghasemi, Pooya and Behal, Aman and B{\"o}l{\"o}ni, Ladislau},
+                      booktitle={Thirty-Second AAAI Conference on Artificial Intelligence},
+                      year={2018}
+                    }
+                </pre>
+                </div>
+                </li>
+
+                <li ><p>
+                  <b>P. Abolghasemi</b>, 
+                    <a href="http://www.cs.ucf.edu/~rrahmati/" target="_blank">R. Rahmatizadeh</a>, 
+                    A. Behal and
+                    <a href="http://www.cs.ucf.edu/~lboloni/" target="_blank">L. Bölöni</a>
+                    <br><b>Real-time placement of a wheelchair-mounted robotic arm</b>
+                    <i>International Conference on Robot and Human Interactive Communication (RO-MAN)</i>,
+                    2016.
+                    <br />
+                    <a href="javascript:toggleBibtex('pooya_roman')">[BibTeX]</a>
+                    <a href="https://ieeexplore.ieee.org/abstract/document/7745235" target="_blank">[PDF]</a> <a href="https://www.youtube.com/watch?v=aHJdFCyMVPo"  target="_blank">
+                    [Video]</a> 
+                    </p>
+                    <div id="bib_pooya_roman" class="bibtex noshow">
+                    <pre>
+                        @inproceedings{abolghasemi2016real,
+                          title={Real-time placement of a wheelchair-mounted robotic arm},
+                          author={Abolghasemi, Pooya and Rahmatizadeh, Rouhollah and Behal, Aman and B{\"o}l{\"o}ni, Ladislau},
+                          booktitle={2016 25th IEEE International Symposium on Robot and Human Interactive Communication (RO-MAN)},
+                          pages={1032--1037},
+                          year={2016},
+                          organization={IEEE}
+                        }
+                    </pre>
+                    </div>
+                    </li>
+
+                    <li ><p>
+                        <b>P. Abolghasemi</b>, 
+                          <a href="http://www.cs.ucf.edu/~rrahmati/" target="_blank">R. Rahmatizadeh</a>, 
+                          A. Behal and
+                          <a href="http://www.cs.ucf.edu/~lboloni/" target="_blank">L. Bölöni</a>
+                          <br><b>A real-time technique for positioning a wheelchair-mounted robotic arm for household manipulation tasks</b>
+                          <i>Workshops at Association for the Advancement of Artificial Intelligence (AAAI)</i>,
+                          2016.
+                          <br />
+                          <a href="javascript:toggleBibtex('pooya_workshop')">[BibTeX]</a>
+                          <a href="https://www.aaai.org/ocs/index.php/WS/AAAIW16/paper/viewPDFInterstitial/12575/12336" target="_blank">[PDF]</a>
+                          </p>
+                          <div id="bib_pooya_workshop" class="bibtex noshow">
+                          <pre>
+                              @inproceedings{abolghasemi2016real,
+                                title={A real-time technique for positioning a wheelchair-mounted robotic arm for household manipulation tasks},
+                                author={Abolghasemi, Pooya and Rahmatizadeh, Rouhollah and Behal, Aman and Boloni, Ladislau},
+                                booktitle={Workshops at the Thirtieth AAAI Conference on Artificial Intelligence},
+                                year={2016}
+                              }
+                          </pre>
+                          </div>
+                          </li>
+
+      </ul>
+    </div><!-- /.article-wrap -->
+    {% if site.disqus_shortname and page.comments %}
+      <section id="disqus_thread"></section><!-- /#disqus_thread -->
+    {% endif %}
+  </article>
+</div><!-- /#index -->
+<div class="footer-wrap">
+  <footer>
+    {% include _footer.html %}
+  </footer>
+</div><!-- /.footer-wrap -->
+
+{% include _scripts.html %}          
+
+</body>
+</html>

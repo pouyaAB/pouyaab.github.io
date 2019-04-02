@@ -27,8 +27,8 @@ owner:
 links:
   #- title: Curriculum
   #  url: /cv/
-  # - title: Publications
-  #   url: /publications/
+  - title: Publications
+    url: /publications/
   #- title: Code
   #  url: /code/
   - title: Blog
