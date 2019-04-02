@@ -5,4 +5,4 @@ description: "CVPR 2019: Pay attention! - Robustifying a Deep Visuomotor Policy 
 comments: False
 ---
 
-Under Construction
+[![Pay Attention YouTube Video](../images/video_shot.png)](https://www.youtube.com/watch?v=armz9CfjYRg){:target="_blank"}
