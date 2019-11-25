@@ -3,6 +3,16 @@ layout: post
 title: "CVPR 2019: Pay attention! - Robustifying a Deep Visuomotor Policy throughTask-Focused Visual Attention?"
 description: "CVPR 2019: Pay attention! - Robustifying a Deep Visuomotor Policy throughTask-Focused Visual Attention"
 comments: False
+tags:
+    - Spatial Attention
+    - imitation learning
+    - robotics
+    - autonomous robot
+    - deep learning
+    - machine learning
+    - VAE-GAN
+    - mixture density networks
+    - CVPR 2019
 ---
 
 | **Paper:** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| [Pay attention! - Robustifying a Deep Visuomotor Policy through Task-Focused Visual Attention](https://www.crcv.ucf.edu/wp-content/uploads/2019/05/Publications_Pay_attention.pdf)|
