@@ -2,13 +2,13 @@ title:            Pooya Abolghasemi's site
 description:      Welcome to my site.
 # Your site's domain goes here. Leave localhost server or blank when working locally.
 url:              //pouyaab.github.io
-disqus_shortname: pabolghasemi-com
+disqus_shortname: D3GAN
 
 # Owner/author information
 owner:
   name:           Pooya Abolghasemi
   avatar:         pooya.png
-  bio:            PhD candidate at University of Central Florida. Passionate about Machine Learning, Robotics, Computer Vision, Technology, Astronomy.
+  bio:            Passionate about Machine Learning, Robotics, Computer Vision, Technology, Astronomy.
   email:          pooya.abolghasemi@gmail.com
   # Social networking links are used in author-bio sidebar. Update and remove as you like.
   twitter: D3GAN
@@ -17,22 +17,27 @@ owner:
   #google_plus: 113718226018314522413
   github: pouyaAB
 # Analytics and webmaster tools stuff goes here
-google_analytics: UA-153373366-1
+#google_analytics: UA-52736040-1
 #google_verify:
 # https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
 #bing_verify:
 
 # Links to include in top navigation
 # For external links add external: true
+collections:
+  books:
+    output: true
+    permalink: /:collection/:title
+    
 links:
-  #- title: Curriculum
-  #  url: /cv/
   - title: Publications
     url: /publications/
   #- title: Code
   #  url: /code/
   - title: Blog
     url: /blog/
+  - title: Library
+    url: /library/
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 timezone:    US/EST
@@ -60,5 +65,5 @@ kramdown:
     coderay_bold_every: 10
     coderay_css: class
 
-include: [".htaccess"]
+include: [".htaccess", "library.md"]
 exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules", "Gemfile", "Gemfile.lock", "LICENSE", "README.md"]
